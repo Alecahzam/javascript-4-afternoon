@@ -203,14 +203,22 @@ function secretNumber() {
   Fix the code below to log the desired output.
 */
 
+// function timeOutCounter() {
+//  setTimeout(function() {
+//       i * 1000;});
+//     console.log(i);
+//     for (var i = 0; i <= 5; i++) {
+//         setTimeout()
+//     }
+//   }
 function timeOutCounter() {
-  function timer() {
-    for (var i = 0; i <= 5; i++) {
-      setTimeout(function() {
-        console.log(i);
-      });
-    }
+  function time(i) {
+    setTimeout(function() {
+      console.log(i);
+    }, i * 1000);
   }
-  i * 1000;
+  for (var i = 0; i <= 5; i++) {
+    time(i);
+  }
 }
 timeOutCounter();
